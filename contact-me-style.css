@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
+
+:root {
+    --form-bg: rgba(255, 255, 255, 0.9);
+    --input-border: rgba(0, 0, 0, 0.1);
+    --input-focus: var(--dusty-rose);
+    --btn-hover: var(--dark-gray);
+}
+
+.page-content {
+    background: #efefef;
+    min-height: calc(100vh - 180px);
+    padding: 2rem 0;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 3rem;
+    font-family: "Geo", sans-serif;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+}
+
+.contact-info {
+    background: var(--teal);
+    padding: 2.5rem;
+    border-radius: 15px;
+    color: var(--dark-gray);
+}
+
+.contact-info h2 {
+    font-family: "Geo", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+.info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-item i {
+    font-size: 1.4rem;
+    color: var(--dark-gray);
+}
+
+.contact-social h3 {
+    font-family: "Geo", sans-serif;
+    margin-bottom: 1.5rem;
+    color: var(--dark-gray);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--dusty-rose);
+    transform: translateY(-3px);
+}
+
+.contact-form-container {
+    padding: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background: var(--form-bg);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #666;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background: transparent;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--dusty-rose);
+    box-shadow: 0 0 0 2px rgba(212, 165, 165, 0.2);
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:valid ~ label {
+    transform: translateY(-1.5rem) scale(0.9);
+    color: var(--dusty-rose);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    padding: 1rem 2.5rem;
+    background: var(--dusty-rose);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--dark-gray);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+

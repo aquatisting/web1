@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Advanced Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my-blog-style.css">
+</head>
+<body>
+    <header>
+        <div class="retro-link">
+            <a href="./index.html">Retro Haven</a>
+        </div>
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="quatrefoil">
+                    <div class="quatrefoil-circle"></div>
+                    <div class="quatrefoil-circle"></div>
+                    <div class="quatrefoil-circle"></div>
+                    <div class="quatrefoil-circle"></div>
+                    <div class="logo-text">JD</div>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link home-link">Home</a>
+                <a href="./about-me.html" class="nav-link about-link">About Me</a>
+                <a href="./services.html" class="nav-link services-link">Services</a>
+                <a href="./my-blog.html" class="nav-link blog-link active">My Blog</a>
+                <a href="./contact-me.html" class="nav-link">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="blog-container">
+            <h1 class="blog-title">My Blog</h1>
+            
+            <div class="featured-post">
+                <div class="post-image">
+                    <img src="./images/camera1.jpg" alt="Featured Post">
+                    <div class="post-category" data-category="photography">Photography</div>
+                </div>
+                <div class="post-content">
+                    <h2>The Art of Vintage Photography</h2>
+                    <p class="post-meta">
+                        <span class="date"><i class="far fa-calendar"></i> Feb 27, 2024</span>
+                        <span class="author"><i class="far fa-user"></i> John Doe</span>
+                    </p>
+                    <p class="post-excerpt">Exploring the timeless charm of vintage cameras and the unique aesthetic they bring to modern photography...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="./images/camera2.jpg" alt="Blog Post">
+                        <div class="post-category" data-category="technique">Technique</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Film Development Guide</h3>
+                        <p class="post-meta">
+                            <span class="date"><i class="far fa-calendar"></i> Feb 25, 2024</span>
+                        </p>
+                        <p class="post-excerpt">Master the art of film development with our comprehensive guide...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <!-- Add more post-card articles as needed -->
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="./images/camera.png" alt="Vintage Camera Collection" loading="lazy">
+                        <div class="post-category" data-category="collections">Collections</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Building a Vintage Camera Collection</h3>
+                        <p class="post-meta">
+                            <span class="date"><i class="far fa-calendar"></i> Feb 27, 2024</span>
+                        </p>
+                        <p class="post-excerpt">Discover the essentials of starting your own vintage camera collection. From iconic Kodak models to rare finds...</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Retro Haven. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
